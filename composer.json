@@ -9,6 +9,11 @@
       "email": "alex.schmid@stud.unibas.ch"
     }
   ],
+  "autoload" : {
+    "psr-4" : {
+      "johnnymcweed\\event\\" : "src/"
+    }
+  },
   "require": {
     "luyadev/luya-core": "~1.0.0"
   },
