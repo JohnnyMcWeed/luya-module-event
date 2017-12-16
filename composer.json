@@ -3,12 +3,17 @@
   "description": "The event module will provide you a basic event system with categories. You can show past, future and current events.",
   "type": "luya-module",
   "minimum-stability": "stable",
+  "keywords": ["php", "yii", "yii2", "luya", "luya-module", "module", "event"],
+  "license": "MIT",
   "authors": [
     {
       "name": "Alexander Schmid",
       "email": "alex.schmid@stud.unibas.ch"
     }
   ],
+  "support": {
+    "issues": "https://github.com/JohnnyMcWeed/luya-module-event/issues"
+  },
   "autoload" : {
     "psr-4" : {
       "johnnymcweed\\event\\" : "src/"
