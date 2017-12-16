@@ -66,7 +66,7 @@ class DefaultController extends Controller
                 $order = ['defaultOrder' => $this->module->currentEventDefaultOrder];
                 $pagination = ['defaultPageSize' => $this->module->currentEventDefaultPageSize];
                 break;
-            case 'default':
+            default:
                 $query = Event::find();
                 $order = ['defaultOrder' => $this->module->allEventDefaultOrder];
                 $pagination = ['defaultPageSize' => $this->module->allEventDefaultPageSize];
