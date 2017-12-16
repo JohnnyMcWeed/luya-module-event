@@ -9,7 +9,7 @@ It is possible to show all categories or a single category.
 For the installation of modules Composer is required.
 
 ```sh
-composer require johnnymcweed/luya-module-event:~1.0.0
+composer require johnnymcweed/luya-module-event:dev-master
 ```
 
 ### Configuration
