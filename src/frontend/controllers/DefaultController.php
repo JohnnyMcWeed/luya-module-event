@@ -1,8 +1,8 @@
 <?php
 namespace johnnymcweed\event\frontend\controllers;
 
-use app\modules\event\models\Cat;
-use app\modules\event\models\Event;
+use johnnymcweed\event\models\Cat;
+use johnnymcweed\event\models\Event;
 use luya\web\Controller;
 use yii\data\ActiveDataProvider;
 

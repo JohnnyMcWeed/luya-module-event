@@ -13,5 +13,5 @@ class CatController extends \luya\admin\ngrest\base\Controller
     /**
      * @var string The path to the model which is the provider for the rules and fields.
      */
-    public $modelClass = 'app\modules\event\models\Cat';
+    public $modelClass = 'johnnymcweed\event\models\Cat';
 }

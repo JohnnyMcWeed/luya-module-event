@@ -11,8 +11,8 @@ namespace johnnymcweed\event\admin;
 class Module extends \luya\admin\base\Module
 {
     public $apis = [
-        'api-event-event' => 'app\modules\event\admin\apis\EventController',
-        'api-event-cat' => 'app\modules\event\admin\apis\CatController'
+        'api-event-event' => 'johnnymcweed\event\admin\apis\EventController',
+        'api-event-cat' => 'johnnymcweed\event\admin\apis\CatController'
     ];
 
     public function getMenu()

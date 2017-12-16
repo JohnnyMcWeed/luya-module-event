@@ -2,7 +2,7 @@
 
 namespace johnnymcweed\event\models;
 
-use app\modules\event\admin\Module;
+use johnnymcweed\event\admin\Module;
 use luya\admin\traits\SoftDeleteTrait;
 use luya\helpers\Inflector;
 use luya\helpers\Url;
