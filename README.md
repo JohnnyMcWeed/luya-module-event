@@ -75,16 +75,11 @@ use luya\web\jsonld\Event;
 <?php
 foreach($provider->models as $item):
     /* @var $item \johnnymcweed\event\models\Event */
-    try {
-        JsonLd::addGraph((new Event())
-            ->setName($item->title)
-            ->setDescription($item->teaser_text)
-            ->setStartDate(Yii::$app->formatter->asDate($item->event_start))
-            ->setEndDate(Yii::$app->formatter->asDate($item->event_end))
-        );
-    } catch (\luya\Exception $e) {
-    } catch (\yii\base\InvalidConfigException $e) {
-    }
+    JsonLd::event()
+        ->setName($item->title)
+        ->setDescription($item->teaser_text)
+        ->setStartDate(Yii::$app->formatter->asDate($item->event_start))
+        ->setEndDate(Yii::$app->formatter->asDate($item->event_end));
     ?>
     <a href="<?= $item->eventUrl; ?>" class="col-md-3 field">
         <?php /* @var $item \johnnymcweed\event\models\Event */ ?>
