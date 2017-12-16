@@ -1,0 +1,18 @@
+{
+  "name": "johnnymcweed/luya-module-event",
+  "description": "The event module will provide you a basic event system with categories. You can show past, future and current events.",
+  "type": "luya-module",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Alexander Schmid",
+      "email": "alex.schmid@stud.unibas.ch"
+    }
+  ],
+  "require": {
+    "luyadev/luya-core": "~1.0.0"
+  },
+  "extra": {
+
+  }
+}
