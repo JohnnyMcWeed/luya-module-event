@@ -18,10 +18,10 @@ class Module extends \luya\admin\base\Module
     public function getMenu()
     {
         return (new \luya\admin\components\AdminMenuBuilder($this))
-            ->node(self::t('event'), 'extension')
+            ->node(self::t('event'), 'event')
             ->group('Group')
-            ->itemApi(self::t('event'), 'eventadmin/event/index', 'label', 'api-event-event')
-            ->itemApi(self::t('cat'), 'eventadmin/cat/index', 'label', 'api-event-cat');
+            ->itemApi(self::t('event'), 'eventadmin/event/index', 'event-available', 'api-event-event')
+            ->itemApi(self::t('cat'), 'eventadmin/cat/index', 'event-note', 'api-event-cat');
     }
 
     public static function onLoad()
