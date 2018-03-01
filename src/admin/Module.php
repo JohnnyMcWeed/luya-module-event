@@ -20,8 +20,8 @@ class Module extends \luya\admin\base\Module
         return (new \luya\admin\components\AdminMenuBuilder($this))
             ->node(self::t('event'), 'event')
             ->group('Group')
-            ->itemApi(self::t('event'), 'eventadmin/event/index', 'event-available', 'api-event-event')
-            ->itemApi(self::t('cat'), 'eventadmin/cat/index', 'event-note', 'api-event-cat');
+            ->itemApi(self::t('event'), 'eventadmin/event/index', 'event_available', 'api-event-event')
+            ->itemApi(self::t('cat'), 'eventadmin/cat/index', 'event_note', 'api-event-cat');
     }
 
     public static function onLoad()
